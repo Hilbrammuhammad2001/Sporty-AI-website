@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sporty AI Website</title>
+  <link rel="stylesheet" href="Chart.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(140.93deg, #ffffff 38.84%, #1e7fc6 99.56%);
+    }
+    /* Style for header */
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Style for h1 */
+    h1 {
+      color: #000;
+      margin: 0;
+    }
+
+    /* Style for user and logout */
+    .user-logout {
+      display: flex;
+      align-items: center;
+    }
+
+    .user img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logout {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    /* Style for navigation */
+    nav {
+      background-color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .cart {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .cart h2 {
+      margin-top: 0;
+    }
+    .cart ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .cart ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .cart ul li img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+    .product-info {
+      flex-grow: 1;
+    }
+    .product-info h3 {
+      margin: 0;
+    }
+    .product-info p {
+      margin: 5px 0;
+    }
+    .cart button {
+      background-color: #1e7fc6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cart button:hover {
+      background-color: #155a8a;
+    }
+    .total {
+      text-align: right;
+      margin-top: 20px;
+    }
+    .total p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+    footer {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer a {
+      color: #1e7fc6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sporty AI Website</h1>
+    <div class="user-logout">
+      <div class="user">
+        <img
+          src="WhatsApp_Image_2024-06-15_at_15.32.48_087d672c-removebg-preview.png"
+          alt="User Profile"
+        />
+        <span>Username</span>
+      </div>
+      <button class="logout"><a href="Login.html">Logout</a></button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Shopping.html">Shopping</a></li>
+      <li><a href="Chatbot.html">Chatbot</a></li>
+      <li><a href="Chart.html">Chart</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="cart">
+      <h2>KERANJANG SAYA</h2>
+      <ul>
+        <li>
+          <img src="shoes_nike-removebg-preview.png" alt="Nike Sneakers" />
+          <div class="product-info">
+            <h3>SNEAKERS NIKE</h3>
+            <p>Rp.200.000</p>
+            <p>Tersedia: 150pcs</p>
+          </div>
+          <button class="checkout" onclick="redirectToPayment()">CHECKOUT</button>
+          <button class="hapus-pesanan">Hapus Pesanan</button>
+        </li>
+        <li>
+          <img
+            src="shoes_adidas-removebg-preview.png"
+            alt="Adidas Sneakers"
+          />
+          <div class="product-info">
+            <h3>SNEAKERS ADIDAS</h3>
+            <p>Rp.200.000</p>
+            <p>Tersedia: 150pcs</p>
+          </div>
+          <button class="checkout" onclick="redirectToPayment()">CHECKOUT</button>
+          <button class="hapus-pesanan">Hapus Pesanan</button>
+        </li>
+      </ul>
+      <div class="total">
+        <p>Total: Rp.400.000</p>
+        <button class="checkout" onclick="redirectToPayment()">CHECKOUT</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function redirectToPayment() {
+      // Ganti URL di bawah ini sesuai dengan halaman pembayaran yang Anda miliki
+      window.location.href = "Pembayaran.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sporty AI Website</title>
+  <link rel="stylesheet" href="Chatbot.css">
+</head>
+<body>
+  <header>
+    <h1>Sporty AI Website</h1>
+    <div class="user-logout">
+      <div class="user">
+        <img src="WhatsApp_Image_2024-06-15_at_15.32.48_087d672c-removebg-preview.png" alt="User Profile">
+        <span>Username</span>
+      </div>
+      <button class="logout"><a href="Login.html">Logout</a></button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Shopping.html">Shopping</a></li>
+      <li><a href="Chatbot.html">Chatbot</a></li>
+      <li><a href="Chart.html">Chart</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="chatbox" id="chatbox">
+      <!-- Chat messages will appear here -->
+    </div>
+    <form class="input-box" id="chatForm">
+      <input type="text" id="userInput" placeholder="Masukkan pesan..." required>
+      <button type="submit" id="sendButton">KIRIM PESAN</button>
+    </form>
+  </div>
+  <script src="Chatbot.js"></script>
+</body>
+</html>

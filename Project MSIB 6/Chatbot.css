@@ -1,0 +1,137 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.user-logout {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logout {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: right;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: lightgray;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.chatbox {
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-box input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.message.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+}
+
+.message.admin {
+  background-color: #f8d7da;
+  align-self: flex-start;
+}

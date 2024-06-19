@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sporty AI Website</title>
+    <link rel="stylesheet" href="Shopping.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sporty AI Website</h1>
+      <div class="user-info">
+        <div class="user">
+          <img
+            src="WhatsApp_Image_2024-06-15_at_15.32.48_087d672c-removebg-preview.png"
+            alt="User Profile"
+          />
+          <span>Username</span>
+        </div>
+        <button class="logout">Logout</button>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Shopping.html">Shopping</a></li>
+        <li><a href="Chatbot.html">Chatbot</a></li>
+        <li><a href="Chart.html">Chart</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <h2>Katalog Tersedia</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="shoes_adidas-removebg-preview.png" alt="SHOES ADIDAS" />
+          <div>
+            <h3>SHOES ADIDAS</h3>
+            <p>Terjual 160pcs</p>
+            <p>Rp.1.800.000</p>
+          </div>
+          <div class="product-buttons">
+            <button class="buy" onclick="window.location.href='Buy.html'">
+              BELI
+            </button>
+            <button class="chart" onclick="window.location.href='Chart.html'">
+              CHART
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="t-shirt_adidas-removebg-preview.png" alt="T-SHIRT ADIDAS" />
+          <div>
+            <h3>T-SHIRT ADIDAS</h3>
+            <p>Terjual 1pcs</p>
+            <p>Rp750.000</p>
+          </div>
+          <div class="product-buttons">
+            <button class="buy" onclick="window.location.href='Buy.html'">
+              BELI
+            </button>
+            <button class="chart" onclick="window.location.href='Chart.html'">
+              CHART
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="t-shirt_nike-removebg-preview.png" alt="T-SHIRT NIKE" />
+          <div>
+            <h3>T-SHIRT NIKE</h3>
+            <p>Terjual 150pcs</p>
+            <p>Rp.500.000</p>
+          </div>
+          <div class="product-buttons">
+            <button class="buy" onclick="window.location.href='Buy.html'">
+              BELI
+            </button>
+            <button class="chart" onclick="window.location.href='Chart.html'">
+              CHART
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="shoes_nike-removebg-preview.png" alt="SHOES NIKE" />
+          <div>
+            <h3>SHOES NIKE</h3>
+            <p>Terjual 135pcs</p>
+            <p>Rp1.500.000</p>
+          </div>
+          <div class="product-buttons">
+            <button class="buy" onclick="window.location.href='Buy.html'">
+              BELI
+            </button>
+            <button class="chart" onclick="window.location.href='Chart.html'">
+              CHART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Tambahkan event listener untuk tombol Logout
+      const logoutButton = document.querySelector(".logout");
+      logoutButton.addEventListener("click", function () {
+        // Redirect ke halaman login saat tombol Logout diklik
+        window.location.href = "login.html"; // Ganti dengan halaman login yang sesuai
+      });
+    </script>
+  </body>
+</html>
